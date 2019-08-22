@@ -1,0 +1,26 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+}
+.app_container 
+{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+.app_container .info_group
+{
+    width: calc(100% - 450px);
+    background-color: #FFEDF7;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+}
+.app_container .menu
+{
+    width: 450px;
+    background-color: #003164;
+}
