@@ -4,23 +4,57 @@
     padding: 0;
     list-style: none;
     font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
 }
+
 .app_container 
 {
+    position: relative;
     width: 100%;
     height: 100vh;
-    display: flex;
 }
-.app_container .info_group
+.app
 {
-    width: calc(100% - 450px);
+    display: flex;
+    position: relative;
+    width: 1280px;
+    height: 800px;
+}
+.app_container .app .info_group
+{
+    flex: 0 0 calc(100% - 450px);
     background-color: #FFEDF7;
     display: flex;
     flex-flow: column;
     justify-content: space-around;
+    padding: 48px 0 48px 85px;
 }
-.app_container .menu
+.app_container .app .info_group .info_group_rundown_playbtn::before
 {
-    width: 450px;
+    position: absolute;
+    content: '';
+    top: 130px;
+    left: 560px;
+    width: 540px;
+    height: 540px;
+    box-sizing: border-box;
+    border:4px solid #FF4384;
+    border-radius: 50%;
+}
+.app_container .app .info_group .info_group_rundown_playbtn::after
+{
+    position: absolute;
+    content: '';
+    top: 146px;
+    left: 575px;
+    width: 510px;
+    height: 510px;
+    box-sizing: border-box;
+    background-color:#FF4384;
+    border-radius: 50%;
+} 
+.app_container .app .menu
+{
+    flex: 0 0 450px;
     background-color: #003164;
 }
